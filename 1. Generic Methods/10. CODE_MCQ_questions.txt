@@ -1,0 +1,141 @@
+Here are 10 medium to advanced level Multiple Choice Questions (MCQs) on Generic programming in Java, 
+focusing on coding-related questions:
+
+1) MCQ: Consider the following Generic class declaration:
+
+            public class MyGenericClass<T> {
+                private T item;
+            
+                public MyGenericClass(T item) {
+                    this.item = item;
+                }
+            
+                public T getItem() {
+                    return item;
+                }
+            }
+      Which of the following code snippets correctly creates an instance of MyGenericClass to store a List<String>?
+
+      a) MyGenericClass<List<String>> myClass = new MyGenericClass<>();
+      b) MyGenericClass<List<String>> myClass = new MyGenericClass<>(new List<String>());
+      c) MyGenericClass<List<String>> myClass = new MyGenericClass<>(new ArrayList<String>());
+      d) MyGenericClass myClass = new MyGenericClass<>(new ArrayList<String>());
+
+                                                                                                      Answer: C
+
+2) What is the purpose of the upper bounded wildcard (? extends T) in a Generic method?
+      a) To restrict the type parameter to a specific superclass of T.
+      b) To allow the type parameter to be any subclass of T.
+      c) To allow the type parameter to be any type, including T.
+      d) To restrict the type parameter to be exactly T.
+
+3) Given the following code:
+                      public static <T> void printArray(T[] array) {
+                    for (T element : array) {
+                        System.out.print(element + " ");
+                    }
+                }
+  Which of the following statements is true about the printArray method?
+
+  a) It can print arrays of any data type, including primitives.
+  b) It can only print arrays of reference types, not primitives.
+  c) It can only print arrays of numeric data types.
+  d) It cannot print arrays of type String.
+
+4) Consider the Generic class declaration below:
+          
+             public class DataContainer<T> {
+              private T data;
+          
+              public DataContainer(T data) {
+                  this.data = data;
+              }
+          
+              public T getData() {
+                  return data;
+              }
+          }
+
+    If a DataContainer object is created as DataContainer<?> container = new DataContainer<>("Hello");, what can be inferred about the data stored in the container?
+    
+    a) It can store any data type.
+    b) It can store any reference type.
+    c) It can store any primitive data type.
+    d) It can store any type, but it is unknown at compile-time.
+
+
+5) Given the following method signature:
+
+            public <T extends Number> double calculateAverage(T[] array) {
+              // Implementation to calculate and return the average of the elements in the array
+          }
+
+       Which of the following data types can be used as the type argument for the method call to calculate the average of an array of elements?
+      
+      a) Integer
+      b) Double
+      c) String
+      d) Character
+
+6) What is the purpose of the super keyword in the lower bounded wildcard (? super T) in a Generic method?
+
+        a) To restrict the type parameter to a specific superclass of T.
+        b) To allow the type parameter to be any subclass of T.
+        c) To allow the type parameter to be any type, including T.
+        d) To restrict the type parameter to be exactly T.
+
+7) Given the following method signature:
+
+              public static <T> void processList(List<? extends T> list) {
+            // Implementation to process elements in the list
+        }
+      What is the purpose of the ? extends T wildcard in the processList method?
+      
+      a) It allows the method to accept lists of any data type.
+      b) It restricts the method to accept only lists of type T.
+      c) It allows the method to accept lists of type T or its subtypes.
+      d) It restricts the method to accept only empty lists.
+
+8) Given the following Generic class declaration:
+
+              public class Box<T> {
+              private T item;
+          
+              public Box(T item) {
+                  this.item = item;
+              }
+          
+              public T getItem() {
+                  return item;
+              }
+          }
+
+       How can you ensure that the Box class can only store elements that implement the Comparable interface?
+      
+      a) By using a wildcard as the type parameter: Box<?>
+      b) By using the extends keyword with the type parameter: Box<? extends Comparable>
+      c) By adding an upper bound to the type parameter: Box<T extends Comparable>
+      d) By using the extends keyword with the type parameter and the Comparable interface: Box<T extends Comparable<T>>
+
+9) What does the PECS principle stand for in Java Generics?
+    a) Provide, Extend, Collect, Store
+    b) Produce, Exchange, Consume, Save
+    c) Producer, Extender, Consumer, Supplier
+    d) Producer, Extends, Consumer, Super
+
+10. What is the output of the following code snippet?
+
+      List<? super Number> myList = new ArrayList<>();
+      myList.add(10);
+      myList.add(3.14);
+      myList.add("Hello");
+      System.out.println(myList);
+
+      a) [10, 3.14, Hello]
+      b) [10, 3.14]
+      c) [Hello]
+      d) Compiler error
+
+
+
+
