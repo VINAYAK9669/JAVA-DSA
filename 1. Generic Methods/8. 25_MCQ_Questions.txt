@@ -1,0 +1,173 @@
+Here are 25 Multiple Choice Questions (MCQs) and Multiple Select Questions (MSQs) on Generic programming in Java:
+
+-------------MULTIPLE CHOICE QUESTIONS AND MULTIPLE SELECTIVE QUESTIONS------------------
+
+1) What is the purpose of using Generics in java?
+    a) To improve code performance
+    b) To enhance code readability
+    c) To achieve type safety and reusability
+    d) To reduce memory consumption
+                                                                                     Ans: c
+
+2) Which keyword is used to define a Generic class in Java?
+    a) generic
+    b) class
+    c) genericclass
+    d) <>
+                                                                                     Ans: b
+
+3) What does a type parameter represent in a Generic class?
+    a) The actual data type used in the class
+    b) A placeholder for the actual data type to be specified later
+    c) The name of the Generic class
+    d) A variable used in the class methods
+                                                                                     Ans: b
+
+4) How is a type parameter specified in a Generic class?
+    a) Using square brackets: []
+    b) Using angle brackets: <>
+    c) Using curly braces: {}
+    d) Using parentheses: ()
+                                                                                     Ans: b
+
+5) Which of the following is NOT a benefit of using Generics in Java?
+    a) Improved performance
+    b) Code readability
+    c) Type safety
+    d) Code duplication reduction
+                                                                                     Ans: a
+
+6) In Java, can we use primitive data types as type parameters in a Generic class?
+    a) Yes
+    b) No
+                                                                                     Ans: b
+7) MSQ: What can you achieve with a Generic method in Java?
+    a) Type safety
+    b) Code reusability
+    c) Improved performance
+    d) Support for primitive data types
+    e) Avoiding code duplication                                                     Ans: a, b, e
+                                                                                                                                                                          
+ 
+8) MSQ: In a Generic method, where is the type parameter declared?
+    a) Before the return type
+    b) After the method name
+    c) After the access modifier
+    d) Before the method name
+                                                                                     Ans: a
+
+9) Which wildcard character is used in Java to represent an unknown type in Generics?
+    a) *
+    b) $
+    c) ?
+    d) %
+                                                                                    NOT LEARNED
+
+10) In Java Generics, what does PECS stand for?
+    a) Provide, Extend, Collect, Store
+    b) Produce, Exchange, Consume, Save
+    c) Producer, Extender, Consumer, Supplier
+    d) Producer, Extends, Consumer, Super
+
+11) What does the term "type erasure" mean in Java Generics?                         NOT LEARNED
+    a) Removing the type parameter from the code at compile-time
+    b) Deleting the class after using it
+    c) Eliminating the need for type casting
+    d) Removing all classes except one from the code
+
+12) In Java, can we have multiple type parameters in a Generic class or method?
+    a) Yes
+    b) No
+                                                                                      Ans: a
+13) Which of the following is an example of a Generic class in Java?
+    a) ArrayList<Integer>
+    b) LinkedList
+    c) HashSet
+    d) String
+                                                                                      Ans: a
+14) Can we use Generic types in the implementation of Java interfaces?
+    a) Yes
+    b) No
+                                                                                      Ans: a
+15) What is the upper bound wildcard in Java Generics?
+    a) ?
+    b) +
+    c) *
+    d) extends
+                                                                                     NOT LEARNED
+                                                                                     
+16)MSQ: Which of the following is true about the Generic class declaration class MyClass<T extends Number & Comparable<T>>?
+    a) The class can work with any data type
+    b) The class can only work with numeric types
+    c) The class can work with types that implement the Comparable interface
+    d) The class can work with types that extend the Number class
+                                                                                      Ans: b, c, d
+
+17) What does the super keyword represent in a lower bound wildcard in Java Generics?
+    a) Types that are subclasses of a given type
+    b) Types that are superclasses of a given type
+    c) Types that are equal to a given type
+    d) Types that are not related to a given type
+                                                                                       NOT LEARNED
+18)**Can we use primitive data types as arguments for a Generic method in Java?
+    a) Yes
+    b) No
+                                                                                       Ans: b)
+19) What is the output of the following Generic method?
+            public static <T> void printArray(T[] array) 
+                 {
+                    for (T element : array) {
+                        System.out.print(element + " ");
+                    }
+                 }
+    a) It prints the elements of the array separated by spaces
+    b) It prints the hash codes of the elements in the array
+    c) It prints the length of the array
+    d) It prints nothing
+                                                                                       Ans: a
+                                                                                       
+20) When using a Generic method, do we need to specify the type parameter explicitly? 
+    a) Yes
+    b) No
+                                                                                       Ans: b
+                                                                                       
+21) Which of the following is NOT a valid way to use a Generic class in Java?
+    a) Box<Integer> intBox = new Box<Integer>();
+    b) Box<String> strBox = new Box<String>("Hello");
+    c) Box<> genericBox = new Box<>();
+    d) Box<Person> personBox = new Box<>();
+                                                                                        Ans: c     
+                                                                            
+22) Which of the following is a valid declaration of a Generic method in Java?
+    a) public <T> void myMethod(T item) { }
+    b) public static <void> T getItem() { }
+    c) public void myMethod<T>(T item) { }
+    d) public <T> T myMethod(T item) { }
+                                                                                         Ans: a    
+23) Can we use the type parameter T as the return type of a Generic method?
+    a) Yes
+    b) No
+                                                                                        Ans: a                                                                                    
+24) What is the purpose of using the ? extends T wildcard in Java Generics?
+    a) To indicate that the type must be exactly T
+    b) To indicate that the type must be a superclass of T
+    c) To indicate that the type must be a subclass of T
+    d) To indicate that the type must be unknown
+                                                                                        Note Learned
+25) What are the advantages of using Generic programming in Java?
+    a) Type safety
+    b) Code reusability
+    c) Improved performance
+    d) Avoiding type casting
+    e) Increased memory consumption
+                                                                                       Ans: a, b, d, 
+                                                                                      
+26) What are the disadvantages of generic programming in Java? (Select all that apply)
+    a) Code verbosity: Generics can lead to increased code verbosity due to the need to specify type parameters.
+    b) Runtime type erasure: Java's generics suffer from type erasure, which can lead to information loss at runtime.
+    c) Limited support for primitive data types: Generics do not directly support primitive data types as type arguments.
+    d) Inflexibility: Once a class is declared as generic, it cannot be used with different type parameters without recompilation.
+    e) Code complexity: Generics can add complexity to the code, making it harder to understand for beginners.
+
+                                                                                      Ans: a, b, c, d
+
