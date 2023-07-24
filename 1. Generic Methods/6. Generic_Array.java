@@ -31,6 +31,11 @@ public class GenericArray<T> {
     public GenericArray(int size) {
         // Create an Object array of the specified size (unchecked cast to T[])
         array = (T[]) new Object[size];
+        /*
+        * Since Java arrays are covariant, this array can hold references to objects of any type, including Integer, String, and other classes.
+        * This unchecked cast is necessary because Java does not allow creating arrays directly using type parameters, 
+          so we create an array of type Object and then cast it to the desired generic type T.
+        */
     }
 
     /**
