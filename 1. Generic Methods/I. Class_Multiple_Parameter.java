@@ -62,6 +62,7 @@ public class Main<T, U> {
     
     /**
      * Print the pair values.
+     * You cannot use a print statement directly inside the Generic class without it being part of a method.
      */
     public void printPair() {
         System.out.println("First Value: " + first);
