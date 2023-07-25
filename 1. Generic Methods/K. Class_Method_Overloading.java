@@ -1,73 +1,62 @@
 /**
- * A generic class that demonstrates method overloading in Java.
- * The class allows performing different actions based on the type of input.
- *
- * @param <T> The generic type parameter that can be replaced with any type during instantiation.
+ * MethodOverloadingDemo is a Java class that illustrates method overloading.
+ * Method overloading allows the class to have multiple methods with the same name
+ * but different parameter lists, enabling the class to handle different types of input.
+ * This class showcases various overloaded methods to print different types of values.
  */
-//* DEFINITION
-// Method overloading allows the same method name with different parameter lists
-// The decision on which method to call is determined at compile-time based on the arguments provided
-public class GenericClass<T> {
+public class MethodOverloadingDemo {
+
+    // Method overloading allows the same method name with different parameter lists
+    // The decision on which method to call is determined at compile-time based on the arguments provided
 
     /**
-     * Performs an action on the input item of type T.
+     * Prints the provided integer value.
      *
-     * @param item The item of type T on which the action will be performed.
+     * @param number The integer value to be printed.
      */
-    public void doSomething(T item) {
-        System.out.println("Doing something with: " + item);
+    public void printValue(int number) {
+        System.out.println("Printing integer: " + number);
     }
 
     /**
-     * Performs an action on the input integer.
+     * Prints the provided double value.
      *
-     * @param number The integer on which the action will be performed.
+     * @param number The double value to be printed.
      */
-    public void doSomething(int number) {
-        System.out.println("Doing something with integer: " + number);
+    public void printValue(double number) {
+        System.out.println("Printing double: " + number);
     }
 
     /**
-     * Performs an action on the input string.
+     * Prints the two provided integer values.
      *
-     * @param text The string on which the action will be performed.
+     * @param a The first integer value to be printed.
+     * @param b The second integer value to be printed.
      */
-    public void doSomething(String text) {
-        System.out.println("Doing something with string: " + text);
+    public void printValue(int a, int b) {
+        System.out.println("Printing integers: " + a + ", " + b);
     }
 
     /**
-     * Performs an action on both the input item of type T and an integer.
+     * Prints the provided string value.
      *
-     * @param item   The item of type T on which the action will be performed.
-     * @param number The integer on which the action will be performed.
+     * @param text The string value to be printed.
      */
-    public void doSomething(T item, int number) {
-        System.out.println("Doing something with: " + item + " and integer: " + number);
+    public void printValue(String text) {
+        System.out.println("Printing string: " + text);
     }
 
     /**
-     * Main method to demonstrate the usage of the GenericClass.
+     * The main method demonstrates method overloading in action.
      *
      * @param args Command-line arguments (not used in this example).
      */
     public static void main(String[] args) {
-        // Create an instance of GenericClass with Integer type parameter
-        GenericClass<Integer> intClass = new GenericClass<>();
+        MethodOverloadingDemo demo = new MethodOverloadingDemo();
 
-        // Create an instance of GenericClass with String type parameter
-        GenericClass<String> stringClass = new GenericClass<>();
-
-        // Invokes the int version of doSomething
-        intClass.doSomething(42);
-
-        // Invokes the String version of doSomething
-        stringClass.doSomething("Hello");
-
-        // Invokes the generic version with two parameters
-        intClass.doSomething(100, 200);
-
-        // Invokes the generic version with two parameters
-        stringClass.doSomething("Hi", 123);
+        demo.printValue(10);         // Calls the method with int parameter
+        demo.printValue(3.14);       // Calls the method with double parameter
+        demo.printValue("Hello");    // Calls the method with String parameter
+        demo.printValue(1, 2);       // Calls the method with two int parameters
     }
 }
