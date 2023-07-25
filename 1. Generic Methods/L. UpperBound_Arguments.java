@@ -1,3 +1,17 @@
+/**
+ * Program Objective: This program demonstrates the use of a generic class
+ *                    with an upper bound to hold objects of different shapes.
+ *
+ * Class Hierarchy:
+ *   - Shape (Generic shape class with a displayInfo() method)
+ *     - Circle (Subclass of Shape, representing a circle shape)
+ *     - Rectangle (Subclass of Shape, representing a rectangle shape)
+ *
+ * Generic Class: Container<T extends Shape>
+ *   - The Container class can hold objects of type T, where T is a subclass of Shape.
+ *   - It provides a method to display information about the shape held in the container.
+ */
+
 // Shape class represents a generic shape.
 class Shape {
     // Common properties and methods for all shapes
