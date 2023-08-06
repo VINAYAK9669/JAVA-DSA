@@ -13,7 +13,8 @@
  * @author Vinayak Kittad
  * @since 2023-07-24
  */
-public class Box<T> {
+class Main{
+public static class Box<T> {
     private T value;
 
     /**
@@ -43,6 +44,7 @@ public class Box<T> {
     public void setValue(T value) {
         this.value = value;
     }
+}
 
     /**
      * Main method to demonstrate the usage of the `Box` class.
