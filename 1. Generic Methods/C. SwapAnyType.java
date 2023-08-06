@@ -2,23 +2,19 @@
  * This is a Java program that demonstrates overloaded generic methods for swapping elements of different types.
  * The program includes methods that can swap elements of different data types.
  * In this example, we demonstrate swapping elements for integer, string, and double types.
- * Note: The individual swap methods can be expanded to handle other data types as well.
- * 
- * Note: For demonstration purposes, we are considering simple individual element swaps.
- * In practice, you can extend this concept to handle more complex data structures.
+
  * 
  * @Vinayak Kittad
- * @version 1.0
- * @since Date (e.g., 2023-07-24)
+ * @since 2023-07-24
  */
 public class Main {
 
     /**
      * Generic method to swap two elements of any reference type.
      *
-     * @param element1 The first element to be swapped.
-     * @param element2 The second element to be swapped.
-     * @param <T> The type of elements to be swapped (Any reference type).
+     *  element1 The first element to be swapped.
+     *  element2 The second element to be swapped.
+     *  <T> The type of elements to be swapped (Any reference type).
      */
     public static <T> void swap(T element1, T element2) {
         T temp = element1;
