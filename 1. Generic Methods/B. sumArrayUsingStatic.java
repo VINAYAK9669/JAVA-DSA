@@ -15,6 +15,7 @@ public class Main {
         for(T element:array)
         {
             sum += element.intValue();
+            // element.intValue()- is used to convert the current element into an integer value
         }
         return sum;
     }
