@@ -4,13 +4,10 @@
  * to swap objects of any type.
  * 
  * Note: For demonstration purposes, we are considering simple individual element swaps.
- * In practice, you can extend this concept to handle more complex data structures.
- * 
  * Note: The `Person` class has an overridden `toString()` method to provide a custom string representation of a `Person` object.
  * The custom `toString()` method is used to display meaningful information when a `Person` object is converted to a string.
  * 
  * @Vianayak Kittad
- * @version 1.0
  * @2023-07-24
  */
 class Person {
@@ -35,7 +32,7 @@ class Person {
      */
     @Override
     public String toString() {
-        return name + " (" + marks + ")";
+        return name + " [" + marks + "]";
     }
 }
 
@@ -56,8 +53,8 @@ public class Main {
 
     public static void main(String[] args) {
         // Creating two `Person` objects
-        Person p1 = new Person("Sumit", 99.99f);
-        Person p2 = new Person("Rahul", 66.6f);
+        Person p1 = new Person("Vinayak", 99.99f);
+        Person p2 = new Person("Kittad", 66.6f);
 
         System.out.println("Before swapping: p1 = " + p1 + ", p2 = " + p2); // Printing the original values of p1 and p2
         swap(p1, p2); // Calling the `swap` method with p1 and p2 as arguments
