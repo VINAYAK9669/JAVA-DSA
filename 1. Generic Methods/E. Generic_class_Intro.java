@@ -4,9 +4,6 @@
  * It includes a constructor, getter, and setter methods to handle data of type `T`.
  * The program also demonstrates the usage of the `Box` class with `Integer` and `String` data types.
  * 
- * Note: For demonstration purposes, we are considering simple use cases with Integer and String data types.
- * In practice, you can use the `Box` class with other data types as well.
- * 
  * Note: The Generic class `Box` allows for type safety and code reusability when working with different data types.
  * The class is defined with a type parameter `T`, which acts as a placeholder for the actual data type.
  * The constructor and methods inside the class use the type parameter `T` to work with the specified data types.
@@ -14,7 +11,6 @@
  * Note: The `Box` class also demonstrates the usage of getter and setter methods to access and modify the value inside the box.
  * 
  * @author Vinayak Kittad
- * @version 1.0
  * @since 2023-07-24
  */
 public class Box<T> {
